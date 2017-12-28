@@ -21,8 +21,9 @@ body {
     border-bottom: 1px solid #C8CACD;
   }
   .message-list {
-    flex: 1 0 auto;
+    flex: 0 0 80%;
     padding: 20px;
+    overflow: auto;
   }
   .message-form {
     flex: 0 0 10%;
@@ -38,8 +39,14 @@ body {
 }
 
 .channels {
-  flex: 0 0 25%;
+  flex: 0 0 20%;
   background-color: #E6E4E8;
+  padding: 20px;
+}
+
+.channel {
+  margin: 5px 10px;
+  cursor: pointer;
 }
 
 .teams {
@@ -66,7 +73,6 @@ body {
 }
 
 .message-sender {
-  color: #020890;
   font-weight: bold;
 }
 
@@ -82,4 +88,8 @@ body {
       margin-right: 5px;
     }
   }
+}
+
+.selected-channel {
+  font-weight: bold;
 }

@@ -13,9 +13,8 @@ import App from './components/app';
 import '../assets/stylesheets/application.scss';
 
 
-// const message = "Username?";
-// const username = window.prompt(message) || `anonymous${Math.floor(10 + (Math.random() * 90))}`;
-const username = `anonymous${Math.floor(10 + (Math.random() * 90))}`;
+const message = "Username?";
+const username = window.prompt(message) || `anonymous${Math.floor(10 + (Math.random() * 90))}`;
 initialState.currentUsername = username
 
 import messagesReducer from './reducers/messagesReducer';
