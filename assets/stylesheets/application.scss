@@ -2,6 +2,84 @@ body {
   font-family: Helvetica;
 }
 .app {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  display: flex;
+  height: 100vh;
+}
+
+.full-height {
+  height: 100%;
+  margin-bottom: 0px;
+}
+
+.messages {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  .channel-header {
+    padding-left: 20px;
+    flex: 0 0 10%;
+    border-bottom: 1px solid #C8CACD;
+  }
+  .message-list {
+    flex: 1 0 auto;
+    padding: 20px;
+  }
+  .message-form {
+    flex: 0 0 10%;
+    border-top: 1px solid #C8CACD;
+  }
+}
+
+.channel-header {
+  h3 {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+}
+
+.channels {
+  flex: 0 0 25%;
+  background-color: #E6E4E8;
+}
+
+.teams {
+  flex: 0 0 7%;
+  background-color: #C8C8C8;
+}
+
+
+.message {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.message-content {
+  font-size: 1.1em;
+}
+
+.message-header {
+  display: flex;
+  p {
+    margin-bottom: 5px;
+  }
+}
+
+.message-sender {
+  color: #020890;
+  font-weight: bold;
+}
+
+.message-form {
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  form {
+    flex: 1 0 auto;
+    display: flex;
+    input.message-input {
+      margin-right: 5px;
+    }
+  }
 }

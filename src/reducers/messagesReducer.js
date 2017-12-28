@@ -4,10 +4,9 @@ export default function(state, action) {
     return [];
   }
 
-  const SET_MESSAGES = 'SET_MESSAGES'
-
+  const FETCH_MESSAGES = 'FETCH_MESSAGES'
   switch (action.type) {
-    case SET_MESSAGES:
+    case FETCH_MESSAGES:
       return action.payload;
     default:
       return state;
