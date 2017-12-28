@@ -11,7 +11,7 @@ const Message = (props) => {
   return (
     <div className="message">
       <div className="message-header">
-        <p><span className="message-sender" style={{color: `#${color}`}}>{props.message.author}</span> - {moment(props.message.created_at).format('h:mm:ss')}</p>
+        <p><span className="message-sender" style={{color: `#${color}`}}>{emojify(props.message.author)}</span> - {moment(props.message.created_at).format('h:mm:ss')}</p>
       </div>
       <div className="message-content">
         <p>{emojify(props.message.content)}</p>
